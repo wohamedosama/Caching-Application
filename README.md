@@ -2,11 +2,6 @@
 
 > **Unlock the Power of Offline-First Apps!** Experience seamless data persistence and lightning-fast performance with Hive - the lightweight, blazing-fast local database for Flutter.
 
-![Flutter](https://img.shields.io/badge/Flutter-3.9.2+-02569B?logo=flutter)
-![Dart](https://img.shields.io/badge/Dart-3.9.2+-0175C2?logo=dart)
-![Hive](https://img.shields.io/badge/Hive-2.2.3-FF6B35)
-![License](https://img.shields.io/badge/license-MIT-blue)
-
 ---
 
 ## 🎯 What is Caching?
@@ -229,23 +224,6 @@ lib/
 5. ✅ **Type-safe storage** using Hive adapters
 6. ✅ **Clean separation** between network and local layers
 
----
-
-## 🤝 Contributing
-
-Contributions are welcome! Feel free to submit a Pull Request.
-
----
-
-## 📝 License
-
-This project is licensed under the MIT License.
-
----
-
-## ⭐ Show Your Support
-
-If you found this project helpful, please give it a ⭐!
 
 ---
 
