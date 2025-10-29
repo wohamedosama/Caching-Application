@@ -1,5 +1,5 @@
 import 'package:dio/dio.dart';
-import 'package:flutter_caching/core/constant/api_constant.dart';
+import 'package:flutter_caching/core/networking/api_constant.dart';
 import 'package:flutter_caching/features/home/data/model/product_model.dart';
 import 'package:retrofit/retrofit.dart';
 

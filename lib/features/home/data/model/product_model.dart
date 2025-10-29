@@ -34,7 +34,6 @@ class Product extends HiveObject {
     required this.updatedAt,
   });
 
-  // Manual JSON serialization methods
   factory Product.fromJson(Map<String, dynamic> json) {
     return Product(
       id: json['id'] as int,
@@ -42,7 +41,7 @@ class Product extends HiveObject {
       description: json['description'] as String,
       price: (json['price'] as num).toDouble(),
       category: json['category'] as String,
-      // Handle snake_case from API
+
       photoUrl: json['photo_url'] as String? ?? json['photoUrl'] as String,
       createdAt: DateTime.parse(
         json['created_at'] as String? ?? json['createdAt'] as String,
@@ -51,6 +50,18 @@ class Product extends HiveObject {
         json['updated_at'] as String? ?? json['updatedAt'] as String,
       ),
     );
+  }
+  Map<String, dynamic> toJson() {
+    return {
+      'id': id,
+      'name': name,
+      'description': description,
+      'price': price,
+      'category': category,
+      'photo_url': photoUrl,
+      'created_at': createdAt.toIso8601String(),
+      'updated_at': updatedAt.toIso8601String(),
+    };
   }
 }
 
@@ -89,5 +100,15 @@ class ProductsModel extends HiveObject {
           .map((product) => Product.fromJson(product as Map<String, dynamic>))
           .toList(),
     );
+  }
+  Map<String, dynamic> toJson() {
+    return {
+      'success': success,
+      'total_products': totalProducts,
+      'message': message,
+      'offset': offset,
+      'limit': limit,
+      'products': products.map((product) => product.toJson()).toList(),
+    };
   }
 }

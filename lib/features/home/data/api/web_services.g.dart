@@ -1,5 +1,7 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
 
+// ignore_for_file: unused_element_parameter
+
 part of 'web_services.dart';
 
 // **************************************************************************
@@ -9,12 +11,7 @@ part of 'web_services.dart';
 // ignore_for_file: unnecessary_brace_in_string_interps,no_leading_underscores_for_local_identifiers,unused_element
 
 class _WebServices implements WebServices {
-  _WebServices(
-    this._dio, {
-    this.baseUrl,
-    // ignore: unused_element_parameter
-    this.errorLogger,
-  }) {
+  _WebServices(this._dio, {this.baseUrl, this.errorLogger}) {
     baseUrl ??= 'https://api.slingacademy.com';
   }
 
