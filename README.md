@@ -140,19 +140,11 @@ Watch this comprehensive tutorial to master Flutter caching with Hive:
 
 ## 📺 Demo / Screen Recording
 
-<!-- Add your screen recording here -->
-<!--
-### Watch the App in Action
-[![App Demo](link-to-your-gif-or-video)](link-to-your-demo-video)
 
-Or embed your video directly:
-```html
-<video width="100%" controls>
-  <source src="path-to-your-video.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
-```
--->
+
+https://github.com/user-attachments/assets/449565d2-a629-46eb-88fc-052009bc2270
+
+
 
 ---
 
