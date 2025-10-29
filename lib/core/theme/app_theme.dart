@@ -12,7 +12,7 @@ class AppTheme {
     scheme: FlexScheme.sanJuanBlue,
     surfaceTint: Colors.transparent,
     textTheme: TextTheme(),
-    fontFamily: 'Rubik',
+    fontFamily: 'mRubik',
     dialogBackground: Colors.grey.shade100,
     subThemesData: FlexSubThemesData(
       blendOnLevel: 10,
