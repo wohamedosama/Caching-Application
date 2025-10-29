@@ -1,9 +1,9 @@
 import 'package:flex_color_scheme/flex_color_scheme.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 class AppTheme {
   AppTheme._();
+
   //? Light Theme
   static ThemeData lightTheme = FlexThemeData.light(
     visualDensity: FlexColorScheme.comfortablePlatformDensity,
@@ -12,7 +12,7 @@ class AppTheme {
     scheme: FlexScheme.sanJuanBlue,
     surfaceTint: Colors.transparent,
     textTheme: TextTheme(),
-    fontFamily: GoogleFonts.rubik().fontFamily,
+    fontFamily: 'Rubik',
     dialogBackground: Colors.grey.shade100,
     subThemesData: FlexSubThemesData(
       blendOnLevel: 10,
@@ -30,7 +30,7 @@ class AppTheme {
     surfaceTint: Colors.transparent,
     tabBarStyle: FlexTabBarStyle.forBackground,
     textTheme: TextTheme(),
-    fontFamily: GoogleFonts.rubik().fontFamily,
+    fontFamily: 'Rubik',
     dialogBackground: Colors.grey.shade900,
     subThemesData: FlexSubThemesData(
       blendOnLevel: 20,

@@ -17,4 +17,7 @@ Future<void> initGetIt() async {
   getIt.registerLazySingleton<GetProductRepo>(
     () => GetProductRepo(getIt<WebServices>(), getIt<HomeDateBaseProvider>()),
   );
+  getIt.registerLazySingleton<ProductCubit>(
+    () => ProductCubit(getIt<GetProductRepo>()),
+  );
 }

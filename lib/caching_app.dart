@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:flutter_caching/core/dependency_injection/di.dart';
 import 'package:flutter_caching/core/theme/app_theme.dart';
+import 'package:flutter_caching/features/home/cubit/product_cubit.dart';
 import 'package:flutter_caching/features/home/presentation/screens/home_screen.dart';
 
 class CachingApp extends StatelessWidget {
@@ -12,7 +15,10 @@ class CachingApp extends StatelessWidget {
       themeMode: ThemeMode.system,
       darkTheme: AppTheme.darkTheme,
       debugShowCheckedModeBanner: false,
-      home: HomeScreen(),
+      home: BlocProvider(
+        create: (context) => getIt<ProductCubit>()..getAllProducts(),
+        child: HomeScreen(),
+      ),
     );
   }
 }

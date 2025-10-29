@@ -6,3 +6,4 @@ export 'package:flutter_caching/features/home/data/api/web_services.dart';
 export 'package:flutter_caching/features/home/data/repo/get_product_repo.dart';
 export 'package:get_it/get_it.dart';
 export 'package:hive_flutter/adapters.dart';
+export 'package:flutter_caching/features/home/cubit/product_cubit.dart';
