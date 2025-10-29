@@ -1,3 +1,4 @@
+import 'package:flutter_caching/core/dependency_injection/di.dart';
 import 'package:flutter_caching/core/helper/internet_connection_helper.dart';
 import 'package:flutter_caching/core/local/home_date_base_provider.dart';
 import 'package:flutter_caching/core/networking/api_results.dart';
@@ -12,7 +13,7 @@ class GetProductRepo {
   GetProductRepo(this.webServices, this.homeDateBaseProvider);
 
   Future<ApiResult<ProductsModel>> getProducts() async {
-    final bool isConnected = await InternetConnectionHelper()
+    final bool isConnected = await getIt<InternetConnectionHelper>()
         .checkInternetConnection();
     final isDateBaseIsEmpty = await homeDateBaseProvider.isDataAvailable();
     if (isConnected) {
